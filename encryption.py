@@ -27,3 +27,5 @@ encrypted = fernet.encrypt(data)
 #Generating the output(Encrypted) File
 with open(output_file, 'wb') as f:
     f.write(encrypted)
+print("The file {} is encrypted successfully and saved as {}".format(input_file,output_file))
+print("\n Please keep the value of key from file key.key file secure for decryption of the same in future.")
