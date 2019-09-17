@@ -21,3 +21,4 @@ decrypted = fernet.decrypt(data)
 #Writing the decrypted file to the output
 with open(output_file, 'wb') as f:
     f.write(decrypted)
+print("The file {} is decrypted successfully and saved as {}".format(input_file,output_file))
