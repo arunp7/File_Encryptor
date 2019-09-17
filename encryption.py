@@ -1,7 +1,7 @@
 #Import Modules From Cryptography
 from cryptography.fernet import Fernet
 
-#Enter the name of input file that you want to encrypt
+#Enter the name of file that you want to encrypt
 input_file = input("Enter the file name: ")
 
 #Encrypted file will be saved as out.encryted
