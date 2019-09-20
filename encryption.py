@@ -1,6 +1,5 @@
 
 def encryptor(file_name):
-    
         #Imports 
         from cryptography.fernet import Fernet
         import os.path
@@ -8,8 +7,7 @@ def encryptor(file_name):
         #Enter the name of file that you want to encrypt
         input_file = file_name
 
-        if os.path.isfile(input_file):
-                    
+        try:        
             #Encrypted file will be saved as out.encryted
             output_file = "out.encrypted"
 
@@ -36,6 +34,6 @@ def encryptor(file_name):
             print("The file {} is encrypted successfully and saved as {}".format(input_file,output_file))
             print("\n Please keep the value of key from file key.key file secure for decryption of the same in future.")
 
-        #Handling error if the file is not found.
-        else:
-            print("The file is not found. Please enter a valid a file name.")
+        #Handling error if the file does not exist.
+        except Exception:
+            print("{} does not exist in the current directory. Please enter a valid a file name.".format(file_name))
