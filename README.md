@@ -18,8 +18,10 @@ Symmetric encryption is when a key is used to encrypt and decrypt a message, so 
 
 1. *Import the 'encryptor' function from Encryption.py file using the following command:*
         **from encryption import encryptor**
+
 2. *Call the encryptor function and also give filename with extension as argument.*
         **encryptor("example.csv")**
+
 3. *If the filename provided is valid, the provided file will be encrypted named as **'out.encrypted'** and a file named "key.key" will be created on your directory. This file contains the value of key, save this for future decryption of encrypted file.*
 
 ***For Decryption***
