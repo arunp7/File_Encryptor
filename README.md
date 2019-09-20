@@ -1,4 +1,4 @@
-###***File Encryptor***
+### File Encryptor
         *This project can be used for encrypting and decrypting csv files on Python Language. The encryption is based on the Cryptography module which is compatible for Python Versions 2.7, 3.4 and above.* 
   
 You can install the module by using the command:
